@@ -21,7 +21,7 @@ function newUserSignUp() {
         checkExistingUser(userName, email, savedUsers2);
         savedUsers2.push(userSignUp);
         localStorage.setItem('userSignUp', JSON.stringify(savedUsers2));
-        window.location.href = "./index3.html";
+        window.location.href = "./rest of site/index3.html";
     } catch (e) {
         document.getElementById('inCaseOfError').innerHTML = e.message;
     }

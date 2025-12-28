@@ -38,7 +38,3 @@ function validateForm(userName, password) {
         throw new Error('You must enter a password');
     }
 }
-// 1. get users from local storage
-// 2. iterate on users array
-// 3. if email / username + password match
-// 3.1. save in session storage
