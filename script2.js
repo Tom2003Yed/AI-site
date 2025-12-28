@@ -18,7 +18,7 @@ function signIn() {
             if (userFound.password == password) {
                 sessionStorage.setItem('loggedInUser', JSON.stringify(userFound));
                 console.log(userOrEmail);
-                window.location.href = "../dashboard/index3.html";
+                window.location.href = "./index3.html";
                 return;
             }
         }

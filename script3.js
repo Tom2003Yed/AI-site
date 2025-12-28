@@ -2,7 +2,7 @@ const loggedInUserString = sessionStorage.getItem('loggedInUser');
 let loggedInUser = JSON.parse(loggedInUserString);
 
 if (!loggedInUser) {
-    window.location.href = "../sign in/index2.html";
+    window.location.href = "./index2.html";
 }
 
 const goal = loggedInUser.goal;
@@ -19,6 +19,6 @@ function showContent() {
 }
 
 function logout() {
-    window.location.href = "../sign in/index2.html";
+    window.location.href = "./index2.html";
     sessionStorage.removeItem("loggedInUser");
 }
