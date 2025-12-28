@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="box">
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="User Name" id="userNameInput">
+        <input type="email" placeholder="email" id="emailInput">
+        <input type="password" placeholder="password" id="password">
+        <select id="goalSelect">
+            <option>JS</option>
+            <option>React</option>
+            <option>Algorithms</option>
+            <option>Bagroot</option>
+        </select>
+        <button id="btnSignUp" onclick="newUserSignUp()">Sign Up!</button>
+        <a href="../sign in/index2.html">already signed up? click here!</a>
+        <div id="inCaseOfError"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

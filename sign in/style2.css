@@ -1,0 +1,81 @@
+body {
+    height: 1000px;
+}
+
+#box {
+    height: 400px;
+    width: 350px;
+    background-color: rgb(193, 226, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modern Sign In Design */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto !important;
+    width: 85% !important;
+    max-width: 380px !important;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 { color: #fff; text-align: center; letter-spacing: 2px; }
+
+input {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255,255,255,0.5) !important;
+    padding: 15px !important;
+    color: white !important;
+    border-radius: 50px !important;
+}
+
+input::placeholder { color: rgba(255,255,255,0.7); }
+
+button {
+    border-radius: 50px !important;
+    padding: 15px !important;
+    background: #fff !important;
+    color: #e73c7e !important;
+    font-size: 1.1rem;
+    transition: 0.4s !important;
+}
+
+button:hover {
+    transform: rotate(-2deg) scale(1.05);
+    background: #23a6d5 !important;
+    color: white !important;
+}
+
+a { color: #fff; text-align: center; margin-top: 10px; font-size: 0.9rem; }
